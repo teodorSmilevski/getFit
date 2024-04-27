@@ -4,6 +4,7 @@ import NavBar from "./components/NavBar";
 import Features from "./pages/Features";
 import Home from "./pages/Home";
 import Workouts from "./pages/Workouts";
+import About from "./pages/About";
 // import { Home, Features, Workouts } from "./pages";
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/features" element={<Features />} />
         <Route path="/workouts" element={<Workouts />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </>
   );
