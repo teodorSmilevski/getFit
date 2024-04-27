@@ -6,7 +6,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   background-color: var(--dark-bg);
-  border-radius: 0 0 6rem 6rem;
+  /* border-radius: 0 0 6rem 6rem; */
 }
 .logo img {
   width: 100px;
@@ -50,27 +50,47 @@ nav a {
 @media (max-width: 768px) {
   nav {
     padding: 0.5rem 0;
-    justify-content: center;
+    justify-content: start;
   }
   .menu-icon {
     display: inline-flex;
   }
-  nav ul {
+  .logo {
+    margin-left: 5rem;
+  }
+  .logo img {
+    width: 80px;
+  }
+  .menu-list {
+    display: none;
+  }
+
+  .dropdown-menu {
     position: absolute;
-    /* display: block; */
+    display: flex;
     flex-direction: column;
     align-items: center;
     left: 0;
-    top: 4rem;
+    top: 3.9rem;
     width: 100%;
+    height: 13rem;
     background-color: var(--dark-bg);
+    animation-name: openmenu;
+    animation-duration: 0.5s;
   }
-  /* TODO: state so proverva dali e open menito, ako da da go otvori */
-  nav ul li {
-    width: 100%;
-    text-align: center;
-    padding: 1rem 0;
+
+  nav p {
+    font-size: 2rem;
   }
+  @keyframes openmenu {
+    from {
+      height: 0px;
+    }
+    to {
+      height: 13rem;
+    }
+  }
+
   #login {
     position: absolute;
     right: 2rem;
