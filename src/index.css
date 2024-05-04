@@ -1,4 +1,12 @@
+:root {
+  --dark-green: #006270;
+  --green: #009394;
+  --light-green: #00edc7;
+  --dark-bg: #253649;
+}
 * {
   margin: 0;
   padding: 0;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
 }
