@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./NavBar.css";
+import Login from "../pages/Login.jsx";
 export default function NavBar() {
   return (
     <nav>
@@ -18,6 +19,7 @@ export default function NavBar() {
           <Link to="/workouts">Workouts</Link>
         </li>
       </ul>
+        <Link to="/login">Login</Link>
     </nav>
   );
 }

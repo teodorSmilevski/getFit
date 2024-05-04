@@ -1,0 +1,169 @@
+/*MAIN PAGE STYLE*/
+.login {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 90vh;
+    font-family: Arial,sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+
+/*RIGHT BODY STYLE*/
+/*HEADER*/
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 70px;
+}
+.header>h1{
+    color: #039394;
+}
+.header>p{
+    color: #7e7d7d;
+}
+
+/*INPUTS*/
+.inputs {
+    margin-bottom: 10px;
+    text-align: center;
+}
+#root > div > div.body_right > div.inputs > div.email > div{
+    width: 290px;
+}
+
+.email,
+.password {
+    margin-bottom: 20px;
+}
+
+.after_inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 35px;
+    place-items: center;
+    margin-bottom: 10px;
+}
+.after_inputs>.MuiButton{
+    color: white;
+    background-color: #039394;
+}
+
+.remember_me,
+.forgot_password {
+    margin-bottom: 10px
+}
+.remember_me>label{
+    color: #7e7d7d;
+}
+.forgot_password>a{
+    text-decoration: none;
+    color: #7e7d7d;
+}
+.forgot_password>a:hover{
+    color: #039394;
+}
+.forgot_password>a:active{
+    color: #039293;
+}
+
+div.body_right > div.inputs > button{
+    width: 290px;
+    height: 39px;
+}
+
+
+/*OTHER LOGINS(GOOGLE,FACEBOOK)*/
+.other_login_ways {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.other_login_ways h5 {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #7e7d7d;;
+}
+#root > div > div.body_right > div.other_login_ways > div > button{
+    text-transform: capitalize;
+    width: 130px;
+    color:#039394;
+    padding: 6px 0;
+    border: 2px solid #039394;
+}
+#root > div > div.body_right > div.other_login_ways > div > button:hover{
+    color: white;
+    background-color: #039394;
+}
+.google_facebook{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    margin-bottom: 20px;
+}
+.google_facebook>button:first-of-type{
+    margin-left: 100px;
+}
+.google_facebook>button:nth-of-type(2){
+    margin-right: 100px;
+}
+
+.no_account {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.no_account>h5{
+    color: #7e7d7d;
+}
+.no_account a {
+    text-decoration: none;
+    color: #039394;
+    font-size: 14px;
+}
+#copyright{
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: gray;
+}
+#copyright > svg{
+    width: 25px;
+    height: 25px;
+    color: gray;
+
+}
+
+p {
+    text-align: center;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+button img {
+    width: 25px;
+    height: 25px;
+    background: none;
+    margin-right: 5px;
+}
+
+button:focus {
+    outline: none;
+    text-transform: capitalize;
+}
+
+button:hover {
+    text-decoration: underline;
+}
+
+.checkbox-label {
+    cursor: pointer;
+}
