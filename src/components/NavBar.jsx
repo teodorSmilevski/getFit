@@ -37,7 +37,7 @@ export default function NavBar() {
         </ul>
       </div>
       <button id="login">
-        <Link>Login</Link>
+        <Link to="/login">Login</Link>
       </button>
     </nav>
   );
