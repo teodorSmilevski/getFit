@@ -5,6 +5,7 @@ import {VisibilityOff} from "@mui/icons-material";
 import {Link} from "react-router-dom";
 import "./SignUp.css";
 import CustomTextField from "./CustomTextField.jsx";
+import CopyrightIcon from "@mui/icons-material/Copyright";
 
 
 export default function SignUp(){
@@ -72,7 +73,16 @@ export default function SignUp(){
                             ),
                         }}
                     />
-                    <Button>Create Account</Button>
+                    <Button
+                        sx={{
+                            color:"white",
+                            backgroundColor:"#039394",
+                            '&:hover':{
+                                color:"#039394",
+                                borderColor:"#039394"
+                            },
+                        }}
+                    >Create Account</Button>
 
                 </div>
                 <h5>Or sign up with...</h5>
@@ -81,6 +91,7 @@ export default function SignUp(){
                     <Button><img src="https://cdn.freebiesupply.com/logos/large/2x/facebook-logo-2019.png" alt="facebook logo"/>Sign up with Facebook </Button>
                 </div>
                 <h5>Already have an account?<Link to="/login">Log in</Link></h5>
+                <p id="copyright"><CopyrightIcon/>2024 ALL RIGHTS RESERVED</p>
             </div>
 
         </div>
