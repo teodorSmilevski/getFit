@@ -1,7 +1,10 @@
 import { Link } from "react-router-dom";
 import "./NavBar.css";
+
+import Login from "../pages/Login.jsx";
 import logo from "../assets/logo.png";
 import { useState } from "react";
+
 export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -25,6 +28,16 @@ export default function NavBar() {
             <Link to="/">Home</Link>
           </li>
 
+
+      {/*  <li>*/}
+      {/*    <Link to="/features">Features</Link>*/}
+      {/*  </li>*/}
+      {/*  <li>*/}
+      {/*    <Link to="/workouts">Workouts</Link>*/}
+      {/*  </li>*/}
+      {/*</ul>*/}
+      {/*  <Link to="/login">Login</Link>*/}
+
           <li onClick={turnToFalse}>
             <Link to="/features">Features</Link>
           </li>
@@ -37,8 +50,9 @@ export default function NavBar() {
         </ul>
       </div>
       <button id="login">
-        <Link>Login</Link>
+        <Link to="/login">Login</Link>
       </button>
+
     </nav>
   );
 }
