@@ -22,11 +22,13 @@ nav ul li {
 nav ul li a:hover {
   color: var(--green);
 }
-nav  a {
+nav a {
   text-decoration: none;
   color: white;
 }
 #login {
+  display: flex;
+  justify-content: center;
   color: white;
   background-color: transparent;
   border: 2px solid var(--green);
@@ -37,6 +39,7 @@ nav  a {
 #login:hover {
   background-color: var(--green);
   cursor: pointer;
+  text-decoration: none;
 }
 .menu-icon {
   color: white;
@@ -85,9 +88,11 @@ nav  a {
   @keyframes openmenu {
     from {
       height: 0px;
+      opacity: 0;
     }
     to {
       height: 13rem;
+      opacity: 1;
     }
   }
 
@@ -97,5 +102,3 @@ nav  a {
     width: 4rem;
   }
 }
-
-
